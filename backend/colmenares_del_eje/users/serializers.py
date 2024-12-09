@@ -21,10 +21,10 @@ class OutputUserSerializer(InputUserSerializer):
 class LoginInputSerializer(serializers.Serializer):
     username = serializers.CharField()
     password = serializers.CharField(min_length=8)
-    dateSignup = serializers.DateTimeField()
+    dateLogin = serializers.DateTimeField(source="date_login")
     idSignup = serializers.PrimaryKeyRelatedField(queryset=User.objects.all()) 
     
 class LoginOutputSerializer(serializers.Serializer):
-    usernmae = serializers.CharField()
+    username = serializers.CharField()
     accessToken = serializers.CharField(source="access_token")
     refreshToken = serializers.CharField(source="refresh_token")

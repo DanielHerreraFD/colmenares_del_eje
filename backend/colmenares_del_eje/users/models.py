@@ -20,5 +20,5 @@ class User(AbstractUser):
 class Login(models.Model):
     username = models.CharField(max_length=30)
     password = models.CharField(max_length=30)
-    date_signup = models.DateTimeField()
+    date_login = models.DateTimeField()
     id_User = models.ForeignKey(User, on_delete=models.CASCADE)

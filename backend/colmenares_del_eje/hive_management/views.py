@@ -23,7 +23,7 @@ class create_hive_view(APIView):
             "food_frames" : beehive.food_frames,
             "observations" : beehive.observations,
             "qr_code" : beehive.qr_code,
-            #"id_weather_conditions" : beehive.id_weather_conditions,
+            "id_weather_conditions" : beehive.id_weather_conditions,
             "status" : beehive.status
         })
         return Response(serializer.data, status=status.HTTP_201_CREATED)

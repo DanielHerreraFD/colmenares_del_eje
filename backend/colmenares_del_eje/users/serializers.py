@@ -10,6 +10,7 @@ class InputUserSerializer(serializers.Serializer):
     assignment_date = serializers.DateField()
     birth_date = serializers.DateField()
     state = serializers.CharField()
+    emergency_contact = serializers.CharField()
     role = serializers.CharField()
     
 

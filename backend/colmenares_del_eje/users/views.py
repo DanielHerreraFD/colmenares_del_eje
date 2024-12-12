@@ -34,6 +34,7 @@ class sign_up_view(APIView):
             "assignment_date": user.assignment_date,
             "birth_date": user.birth_date,
             "state": user.state,
+            "emergency_contact": user.emergency_contact,
             "role": user.role,
             "access_token": str(refresh.access_token),
             "refresh_token": str(refresh),

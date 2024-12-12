@@ -1,0 +1,115 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    background-color: #ffeb3b; /* Amarillo abeja */
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    position: relative;
+}
+
+.logo {
+    height: 40px;
+    position: absolute;
+    left: 20px; /* Fija el logotipo al lado izquierdo */
+    border-radius: 50%;
+    background-color: #ffd54f; /* Dorado suave */
+}
+
+.header-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #4e342e; /* Marrón oscuro */
+    text-align: center; /* Asegura el centrado del texto */
+}
+
+.main-register,
+.main-hiven-register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 2rem 1rem;
+}
+
+.register-container,
+.hiven-form {
+    background-color: #fff3e0; /* Fondo amarillo cálido */
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+.form-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #4e342e; /* Marrón oscuro */
+}
+
+.form-register,
+.hiven-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #795548; /* Marrón claro */
+    text-align: left;
+}
+
+.input,
+.hiven-form input,
+.hiven-form select {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ffcc80; /* Amarillo suave */
+    border-radius: 10px;
+    font-size: 1rem;
+    background-color: #fffde7; /* Amarillo pastel muy claro */
+    color: #4e342e; /* Marrón oscuro */
+    transition: border-color 0.3s;
+}
+
+.input:focus,
+.hiven-form input:focus,
+.hiven-form select:focus {
+    outline: none;
+    border-color: #ffb300; /* Dorado más intenso */
+}
+
+.button {
+    background-color: #ffc107; /* Amarillo abeja vibrante */
+    color: #ffffff; /* Blanco */
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background-color 0.3s;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.button:hover {
+    background-color: #ffa000; /* Dorado más profundo */
+}
+
+.footer {
+    background-color: #ffe082; /* Amarillo cálido */
+    color: #4e342e; /* Marrón oscuro */
+    text-align: center;
+    padding: 1rem;
+    border-top: 1px solid #ffcc80; /* Amarillo suave */
+    font-size: 0.9rem;
+}
